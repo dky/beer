@@ -2,7 +2,7 @@
 
 ## Give people Beer
 
-- A fun little cli app to buy each other beer or give each other kudos.
+- A fun little cli app to buy each other beer or give each other kudos. Credit to @grandtashworth for the original Bash implementation which inspired this.
 
 ## Requirements
 
