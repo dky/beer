@@ -1,8 +1,8 @@
-# Beer
+# :beer:
 
-## Give people Beer
+## Buy people :beer:
 
-- A fun little cli app to buy each other beer or give each other kudos. Credit to @grandtashworth for the original Bash implementation which inspired this.
+- A fun little cli app to buy each other :beer: or give each other kudos. Credit to @grandtashworth for the original Bash implementation which inspired this.
 
 ## Requirements
 
@@ -10,7 +10,7 @@
 
 ## Example Usage
 
-- Just a beer
+- Just a :beer:
 
 ```bash
 $ ./beer.py dky
@@ -19,7 +19,7 @@ Checking to see if we gave dky any Beer
 Yes, he's got some Beer, give him another round!
 ```
 
-- Beer with a reason
+- :beer: with a reason
 
 ```bash
 $ ./beer.py dky "because he's a troll"
@@ -28,9 +28,9 @@ Checking to see if we gave dky any Beer
 Yes, he's got some Beer, give him another round!
 ```
 
-## Summary of beers given
+## Summary of :beer: given
 
-- Summary of beers are stored in [SQLite](https://www.sqlite.org/index.html). Get a summary with:
+- Summary of :beer:s are stored in [SQLite](https://www.sqlite.org/index.html). Get a summary with:
 
 ```bash
 $ ./table.py
