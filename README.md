@@ -2,7 +2,7 @@
 
 ## Give people Beer
 
-- A fun little app to buy each other beer or give each other kudos.
+- A fun little cli app to buy each other beer or give each other kudos.
 
 ## Requirements
 
@@ -29,6 +29,8 @@ Yes, he's got some Beer, give him another round!
 ```
 
 ## Summary of beers given
+
+- Summary of beers are stored in [SQLite](https://www.sqlite.org/index.html). Get a summary with:
 
 ```bash
 $ ./table.py
