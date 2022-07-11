@@ -27,3 +27,16 @@ Thanks! Buying a beer for dky for because he's a troll
 Checking to see if we gave dky any Beer
 Yes, he's got some Beer, give him another round!
 ```
+
+## Summary of beers given
+
+```bash
+$ ./table.py
+User      Count
+------  -------
+dky          24
+hana          8
+petros        8
+grandt        8
+joe           4
+```
