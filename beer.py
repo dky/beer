@@ -2,6 +2,7 @@
 
 import sqlite3
 import datetime
+import sys
 
 conn = sqlite3.connect("beer.db")
 c = conn.cursor()
@@ -60,15 +61,24 @@ def beer(username, purpose=""):
 
 
 if __name__ == "__main__":
-    # Seed the database
-    beer("dky", "Because he's awesome")
-    beer("dky", "Because he's really awesome")
-    beer("joe", "For pizza")
-    beer("hana")
-    beer("hana")
-    beer("petros", "For gas")
-    beer("petros", "For food")
-    beer("grandt", "For growing Potatoes")
-    beer("grandt", "For growing Houseplants")
+
+    # Handle args, we should make this more robust but for now...
+    # print(len(sys.argv))
+
+    # If beer for user + reason for beer
+    if len(sys.argv) == 3:
+        username = sys.argv[1]
+        reason = sys.argv[2]
+        beer(username, reason)
+    # If just beer no purpose
+    elif len(sys.argv) == 2:
+        username = sys.argv[1]
+        beer(username)
+    else:
+        print("Not enough args. Try:")
+        print("Usage: ./beer.py username")
+        print(
+            'Usage: ./beer.py username "If you want to associate a Beer for something awesome"'
+        )
 
     conn.close()
